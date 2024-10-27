@@ -17,6 +17,7 @@ public class Product implements Serializable {
     private String title;
 
     @Column(name = "description", nullable = false)
+    @Lob  // Optional, indicates it's a large object
     private String description;
 
     @Column(name = "price", nullable = false)
